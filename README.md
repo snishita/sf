@@ -124,6 +124,3 @@ We made the following five scenes, in which the left and right columns were move
 ![S4](imgs/11.png)
 - S5: The last simulation scene of Jacob’s ladder.
 ![S5](imgs/12.png)
-
-
-

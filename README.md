@@ -52,19 +52,32 @@ The non-terminal symbol `<code>` represents a single movement in the string figu
 
 ## Generating patterns of the string figure by physical simulation
 
+We divide the process of the string figure into separate parts for each string manipulation, and visualize the string pulling by physical simulation.
+The following figure illustrates overview of the method.
+
+![overview of the method](imgs/3.png)
+Fig.3: overview of the method
+
+- The initial strand path is composed by the sequence of 3D points for the initial pattern of the loop of the string.
+- The simulation indicates a physical simulation with input as the initial strand path or the strand path after finger movement.
+- The strand path is the sequence of the points for the string that is obtained at the end of the previous simulation.
+- The path alteration is process to change the strand path according to the finger movement code, which represents a string manipulation.
+
+
 ### Simulation scene
 Simulation scene consists of 5 cylinders on each side and a wire object.
 
 
 ![simulation scene of the string figure](imgs/4.png)
 
-Fig.3: a simulation scene
+Fig.4: a simulation scene
 
 Movie: [a simulation scene in the middle of Jacob's ladder](https://youtu.be/e5aqfLBSoUo)
 
 The lower cylinders and the upper cylinders correspond to thumbs and the little fingers respectively. The wire object represents the loop of the string.
 
 During the simulation, the left and right cylinders move away from each other in the x-axis direction, and the string is pulled along with them. 
+Exceptionally, in the simulation of the last scene, the cylinders are moved not only left and right but also up and down, so that all the cylinders move away from each other.
 
 ### String manipulation by altering paths
 String manipulation is achieved by making changes to the wire path data without simulation. This process includes following four steps:
@@ -79,18 +92,18 @@ The path of the wire object is obtained from the final scene of the simulation.
 
 ![a path information obtained from the final scene of the simulation](imgs/6_alt.png)
 
-Fig.4: a path information obtained from the final scene of the simulation
+Fig.5: a path information obtained from the final scene of the simulation
 
 The path information is recorded as a sequence of three-dimensional points along the path. The first step is to shrink the x-axis range of the points. The packing algorithm first clusters the points according to Euclidean distance. And then the algorithm moves the clusters (and all points in them) along the x-axis so that all clusters are equally spaced.
 
 ![packing algorithm overview](imgs/packing.png)
 
-Fig.5: packing algorithm overview
+Fig.6: packing algorithm overview
 
 
 ![Result of applying the packing algorithm to the route information in fig 4.](imgs/7.0.png)
 
-Fig.6: the result of applying the packing algorithm to the path information in Fig 4.
+Fig.7: the result of applying the packing algorithm to the path information in Fig 4.
 
 
 #### Loosening the path
@@ -100,20 +113,24 @@ This step moves the points along the z-axis to give a little slack to the path o
 This step moves all of the nooses around the cylinders are moved left and right, and the finger string parts of the wire are extended. The extended parts of finger strings are used as “handles” for the following string manipulation.
 
 ![extending the finger strings](imgs/7.1.png)
-Fig.7: Result of the finger string extension
+Fig.8: Result of the finger string extension
 
 #### Path alteration according to a string manipulation
 
-Following figure shows the path of the wire resulting from the execution of the code `L mu fMS mo nMS pu bfTS` after Fig.7.
+Following figure shows the path of the wire resulting from the execution of the code `L mu fMS mo nMS pu bfTS` after Fig.8.
 The actual path alteration is implemented by inserting new points and moving/deleting existing points.
 
 ![The path after the alteration](imgs/paths2.png)
-Fig.8: The path after the alteration. The right figure shows the path taken by the camera at the different position and angle.
+Fig.9: The path after the alteration. The right figure shows the path taken by the camera at the different position and angle.
 
 ## Experiments of wire simulation
 Following experiments are conducted to investigate whether existing physical simulators can simulate the strands in the string figure.
 
+The simulation scenes are created by [AGX Dynamics](https://www.algoryx.se/agx-dynamics/) version 2.26.1.0.
+
 We made the following five scenes, in which the left and right cylinders were moved away from each other in the x-axis direction during the simulation. During the simulation, the cylinder moved in the left and right x-axis directions for 10 minutes in real time.
+
+NOTE: the following movies have been converted to play at 10x speed.
 
 - S1: There are a middle finger noose on each side, and two strands are twisted at the center. 
 ![S1](imgs/9.png)<br/>
@@ -131,3 +148,98 @@ Movie: [Experiment S4](https://youtu.be/m0oEiwNUqVY): The simulation was failed 
 ![S5](imgs/12.png)<br/>
 Movie: [Experiment S5](https://youtu.be/dWUvdBkmsBw): This simulation required 10 minutes to disappear the slack of strands, after which we exceptionally continued the simulation for another 10 minutes.
 The simulation successfully converged without wire object intrusion occurred.
+
+## Experiments of string figure simulation
+We picked up following six instances of the string figure from [WWW Collection of Favorite String Figures](http://www.alysion.org/figures/index.html)
+- Man on a bed
+- Pole star
+- Twin stars
+- Jacob's ladder
+- Carrying wood
+- Many stars
+
+Each simulation scene continued for a maximum of 20 minutes, but was terminated when it was visually confirmed that there was no more slack in the strings.
+
+### Man on a bed
+Original string figure: [man on a bed](http://www.alysion.org/figures/moreeasy.htm#man)
+
+Finger movement code:
+```
+OA;
+T mu nFS mu fFS pu nLS;
+L mo fFS mu nFS mo tfTS pu bfTS;
+re FN;
+```
+- `OA` represents one of the first patterns of the string figure
+- `OA` determines the initial strand path to be load first. 
+
+Simulation: [movie](https://youtu.be/fRHMACJ9AdI)
+- includes four simulation scenes
+- converted to play at 10x speed
+- The simulation has been successfully finished.
+
+### Pole Star
+Original string figure: [pole star](http://www.alysion.org/figures/moreeasy.htm#pole)
+
+Finger movement code:
+```
+OA
+T ma-tw TN; L mt-tw LN;
+T mu nFS mu fFS pu nLS;
+L mo fFS mu nFS mo tfTS pu bfTS;
+re FN;
+```
+- In the second line, two codes that are independent of each other are inputed together to execute the path alteration.
+- Thus, the number of simulation scenes is 5.
+
+Simulation: [movie](https://youtu.be/u20373SNhfs)
+- includes five simulation scenes
+- converted to play at 10x speed
+- The simulation has been successfully finished.
+
+### Twin stars
+Original string figure: [twin stars](http://www.alysion.org/figures/fairlyeasy.htm#twin)
+
+Finger movement code:
+```
+japan
+re TN;
+T mo nMS mo fMS mo nLS pu fLS;
+re LN;
+L mo fMS mo nMS mo fTS pu nTS;
+T pu nMS;
+M pu LN;
+re bTN; re bMN;
+```
+- `japan` is another the first pattern of the string figure
+- The last three codes are different from the original string manipulation; the last step of string manipulations for "twin stars" is *Osage Extension*, which cannot be represented by a finger movement code. The last three codes are alternative codes that  possibly acheive the same results as the osage extension.
+
+Simulation: [movie](https://youtu.be/sbImtVqkIX8)
+- includes 8 simulation scenes
+- converted to play at 10x speed
+- The simulation has been successfully finished.
+
+### Jacob's ladder
+Original string figure: [osage diamonds](http://www.alysion.org/figures/fairlyeasy.htm#osage)
+
+Finger movement code:
+```
+japan
+re TN;
+T mu nMS mu fMS mu nLS pu fLS;
+T mo nMS pu fMS;
+re LN;
+L mu fMS mo nMS pu bfTS;
+re TN; re TN;
+T mo nMS mo fMS pu nLS;
+T pu nMS;
+M pu bTN;
+re bMN; re LN;
+```
+- The last three codes are alternative codes of osage extension.
+
+Simulation: [movie](https://youtu.be/DFebMQz08EA)
+includes 10 simulation scenes
+- converted to plate at 10x speed
+- the simulation has been successsfully finished.
+

@@ -2,15 +2,15 @@
 
 ## Introduction
 
-String figure is a traditional game with a loop of string played by hooking and/or unhooking strands of the loop from fingers to produce patterns representing certain objects. Following is an instance of the string figure named "Jacob's ladder".
+String figure is a traditional game with a loop of string played by string manipulations (that is, hooking and/or unhooking strands of the loop from fingers) to produce patterns representing certain objects. Following is an instance of the string figure named "Jacob's ladder".
 
-This site shows a method for generating patterns of the string figure using physics simulations.
+This page shows physical simulations for generating patterns of the string figure that change with string manipulations. In addition, this page provides the program codes used to perform the physical simulations.
 
 ![Jacob's ladder](imgs/1.color.png)
 
 Fig.1: The pattern of the string figure "Jacob's ladder"
 
-Movie: [playing with the "jacob's ladder"](https://youtu.be/6fOrDCtNgfA)
+Movie: [playing with the "Jacob's ladder"](https://youtu.be/6fOrDCtNgfA)
 (This video has alternative string manipulations that are not the original one. (Specifically, the last step named "osage extension" is replaced).  The reason for this change is to make it easier to explain "string finger simulation.")
 
 ## Preliminary
@@ -68,10 +68,10 @@ During the simulation, the left and right cylinders move away from each other in
 
 ### String manipulation by altering paths
 String manipulation is achieved by making changes to the wire path data without simulation. This process includes following four steps:
-1. packing the path of the wire object,
+1. packing path of the wire object,
 2. loosening the path, 
 3. extending finger strings, and
-4. path alteration according to a string manipulation.
+4. path alteration according to a given string manipulation.
 
 #### Packing the path of the wire object.
 
@@ -81,7 +81,7 @@ The path of the wire object is obtained from the final scene of the simulation.
 
 Fig.4: a path information obtained from the final scene of the simulation
 
-The path information is recorded as a sequence of three-dimensional points along the path. The first step is to shrink the points in the x-axis direction. The packing algorithm first clusters the points according to Euclidean distance. And then the algorithm moves the clusters (and all points in them) along the x-axis so that all clusters are equally spaced.
+The path information is recorded as a sequence of three-dimensional points along the path. The first step is to shrink the x-axis range of the points. The packing algorithm first clusters the points according to Euclidean distance. And then the algorithm moves the clusters (and all points in them) along the x-axis so that all clusters are equally spaced.
 
 ![packing algorithm overview](imgs/packing.png)
 
@@ -111,16 +111,23 @@ The actual path alteration is implemented by inserting new points and moving/del
 Fig.8: The path after the alteration. The right figure shows the path taken by the camera at the different position and angle.
 
 ## Experiments of wire simulation
-The loop of string of the string figure has two localized parts: one part where strands of the loop are intricately entangled and the other part where strands are pulled into a straight line. We conducted experiments to investigate whether existing physical simulators can simulate the strands in the string figure.
+Following experiments are conducted to investigate whether existing physical simulators can simulate the strands in the string figure.
 
-We made the following five scenes, in which the left and right columns were moved away from each other in the x-axis direction during the simulation.
+We made the following five scenes, in which the left and right cylinders were moved away from each other in the x-axis direction during the simulation. During the simulation, the cylinder moved in the left and right x-axis directions for 10 minutes in real time.
 
 - S1: There are a middle finger noose on each side, and two strands are twisted at the center. 
-![S1](imgs/9.png)
-- S2: Same as S1, but the central strands are twisted twice.
+![S1](imgs/9.png)<br/>
+Movie: [Experiment S1](https://youtu.be/u4nQvAA3Yjo): The simulation successfully converged without wire object intrusion occurred. 
+- S2: Same as S1, but the central strands are twisted twice. <br/>
+Movie: [Experiment S2](https://youtu.be/fpfZ2EFWs78): 
+The simulation successfully converged without wire object intrusion occurred. 
 - S3: Same as S2 but one of the central strands has slack.
-![S3](imgs/10.png)
+![S3](imgs/10.png)<br/>
+Movie: [Experiment S3](https://youtu.be/oP_dTC62wMs): The simulation successfully converged without wire object intrusion occurred. The strands successfully slid at the twisted part and the slack was disappeared.
 - S4: Both thumbs and little fingers have nooses. The far thumb strings cross each other at the center and follow to the near little finger strings on the same side.
-![S4](imgs/11.png)
+![S4](imgs/11.png)<br/>
+Movie: [Experiment S4](https://youtu.be/m0oEiwNUqVY): The simulation was failed because of wire object intrusion, and the central strands were unrealistically untangled.
 - S5: The last simulation scene of Jacob’s ladder.
-![S5](imgs/12.png)
+![S5](imgs/12.png)<br/>
+Movie: [Experiment S5](https://youtu.be/dWUvdBkmsBw): This simulation required 10 minutes to disappear the slack of strands, after which we exceptionally continued the simulation for another 10 minutes.
+The simulation successfully converged without wire object intrusion occurred.

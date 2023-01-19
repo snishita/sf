@@ -247,13 +247,63 @@ T pu nMS;
 M pu bTN;
 re bMN; re LN;
 ```
-- The last three codes are alternative codes of osage extension.
+- The last three codes are alternative codes for osage extension.
 
 Movie:
 
 [![](https://img.youtube.com/vi/DFebMQz08EA/0.jpg)](https://www.youtube.com/watch?v=DFebMQz08EA)
 
 - includes 10 simulation scenes
-- converted to plate at 10x speed
+- converted to play at 10x speed
 - the simulation has been successsfully finished.
 
+### Carrying wood
+
+Original string figure: [carrying wood](http://www.alysion.org/figures/kindofeasy.htm#carrying)
+
+Finger movement code:
+```
+OA
+T pu LN;
+F pu fTS;
+up bTN;
+re bFN; re bTN;
+```
+- The last two codes are alternative codes for *Navaho extension*.
+
+Movie: 
+
+[![](https://img.youtube.com/vi/HFztM99_Fco/0.jpg)](https://www.youtube.com/watch?v=HFztM99_Fco)
+
+- includes 5 simulation scenes
+- converted to play at 10x speed
+- the simulation has been successfully finished.
+
+# Many stars
+
+Original string figure: [many stars](http://www.alysion.org/figures/kindofeasy.htm#many)
+
+Finger movement code:
+```
+OA
+T mo nFS mo fFS pu nLS;
+M mo fFS mo nFS mo tfTS pu bfTS;
+re TN; re TN;
+T mo nFS mu fFS mu nMS mu fMS mu nLS pu fLS;
+re LN;
+T pu MN;
+F mo tfTS pu tnTS;
+re tTN;
+T pu tnFS;
+up bTN;
+re bFN; re bTN;
+```
+- The last two codes are alternative codes for Navaho extension.
+
+Movie:
+
+[![](https://img.youtube.com/vi/vl_RDxauQx8/0.jpg)](https://www.youtube.com/watch?v=vl_RDxauQx8)
+
+- includes 12 simulation scenes
+- converted to play at 10x speed
+- The simulation completed successfully, but failed to draw a pattern of many stars.

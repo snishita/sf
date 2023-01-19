@@ -238,6 +238,8 @@ re bMN; re LN;
 ```
 - The last three codes are alternative codes of osage extension.
 
+[![](https://img.youtube.com/vi/DFebMQz08EA/0.jpg)](https://www.youtube.com/watch?v=DFebMQz08EA)
+
 Simulation: [movie](https://youtu.be/DFebMQz08EA)
 includes 10 simulation scenes
 - converted to plate at 10x speed

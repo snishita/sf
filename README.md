@@ -165,6 +165,8 @@ We picked up following six instances of the string figure from [WWW Collection o
 
 Each simulation scene continued for a maximum of 20 minutes, but was terminated when it was visually confirmed that there was no more slack in the strings.
 
+NOTE: the following movies have been converted to play at 10x speed.
+
 ### Man on a bed
 Original string figure: [man on a bed](http://www.alysion.org/figures/moreeasy.htm#man)
 
@@ -182,7 +184,6 @@ Movie:
 
 [![](https://img.youtube.com/vi/fRHMACJ9AdI/0.jpg)](https://www.youtube.com/watch?v=fRHMACJ9AdI)
 - includes four simulation scenes
-- converted to play at 10x speed
 - The simulation has been successfully finished.
 
 ### Pole Star
@@ -203,7 +204,6 @@ Movie:
 
 [![](https://img.youtube.com/vi/u20373SNhfs/0.jpg)](https://www.youtube.com/watch?v=u20373SNhfs)
 - includes five simulation scenes
-- converted to play at 10x speed
 - The simulation has been successfully finished.
 
 ### Twin stars
@@ -227,7 +227,6 @@ Movie:
 
 [![](https://img.youtube.com/vi/sbImtVqkIX8/0.jpg)](https://www.youtube.com/watch?v=sbImtVqkIX8)
 - includes 8 simulation scenes
-- converted to play at 10x speed
 - The simulation has been successfully finished.
 
 ### Jacob's ladder
@@ -254,7 +253,6 @@ Movie:
 [![](https://img.youtube.com/vi/DFebMQz08EA/0.jpg)](https://www.youtube.com/watch?v=DFebMQz08EA)
 
 - includes 10 simulation scenes
-- converted to play at 10x speed
 - the simulation has been successsfully finished.
 
 ### Carrying wood
@@ -276,7 +274,6 @@ Movie:
 [![](https://img.youtube.com/vi/HFztM99_Fco/0.jpg)](https://www.youtube.com/watch?v=HFztM99_Fco)
 
 - includes 5 simulation scenes
-- converted to play at 10x speed
 - the simulation has been successfully finished.
 
 # Many stars
@@ -305,5 +302,4 @@ Movie:
 [![](https://img.youtube.com/vi/vl_RDxauQx8/0.jpg)](https://www.youtube.com/watch?v=vl_RDxauQx8)
 
 - includes 12 simulation scenes
-- converted to play at 10x speed
 - The simulation completed successfully, but failed to draw a pattern of many stars.

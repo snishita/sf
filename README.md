@@ -132,21 +132,26 @@ We made the following five scenes, in which the left and right cylinders were mo
 
 NOTE: the following movies have been converted to play at 10x speed.
 
-- S1: There are a middle finger noose on each side, and two strands are twisted at the center. 
-![S1](imgs/9.png)<br/>
-Movie: [Experiment S1](https://youtu.be/u4nQvAA3Yjo): The simulation successfully converged without wire object intrusion occurred. 
-- S2: Same as S1, but the central strands are twisted twice. <br/>
-Movie: [Experiment S2](https://youtu.be/fpfZ2EFWs78): 
+- S1: There are a middle finger noose on each side, and two strands are twisted at the center. <br/>
+Movie:<br/>
+[![](https://img.youtube.com/vi/u4nQvAA3Yjo/0.jpg)](https://www.youtube.com/watch?v=u4nQvAA3Yjo)<br/> 
 The simulation successfully converged without wire object intrusion occurred. 
-- S3: Same as S2 but one of the central strands has slack.
-![S3](imgs/10.png)<br/>
-Movie: [Experiment S3](https://youtu.be/oP_dTC62wMs): The simulation successfully converged without wire object intrusion occurred. The strands successfully slid at the twisted part and the slack was disappeared.
-- S4: Both thumbs and little fingers have nooses. The far thumb strings cross each other at the center and follow to the near little finger strings on the same side.
-![S4](imgs/11.png)<br/>
-Movie: [Experiment S4](https://youtu.be/m0oEiwNUqVY): The simulation was failed because of wire object intrusion, and the central strands were unrealistically untangled.
-- S5: The last simulation scene of Jacob’s ladder.
-![S5](imgs/12.png)<br/>
-Movie: [Experiment S5](https://youtu.be/dWUvdBkmsBw): This simulation required 10 minutes to disappear the slack of strands, after which we exceptionally continued the simulation for another 10 minutes.
+- S2: Same as S1, but the central strands are twisted twice. <br/>
+Movie:<br/>
+[![](https://img.youtube.com/vi/fpfZ2EFWs78/0.jpg)](https://www.youtube.com/watch?v=fpfZ2EFWs78)<br/> 
+The simulation successfully converged without wire object intrusion occurred. 
+- S3: Same as S2 but one of the central strands has slack.<br/>
+Movie:<br/>
+[![](https://img.youtube.com/vi/oP_dTC62wMs/0.jpg)](https://www.youtube.com/watch?v=oP_dTC62wMs)<br/>
+The simulation successfully converged without wire object intrusion occurred. The strands successfully slid at the twisted part and the slack was disappeared.
+- S4: Both thumbs and little fingers have nooses. The far thumb strings cross each other at the center and follow to the near little finger strings on the same side.<br/>
+Movie:<br/>
+[![](https://img.youtube.com/vi/m0oEiwNUqVY/0.jpg)](https://www.youtube.com/watch?v=m0oEiwNUqVY)<br/>
+The simulation was failed because of wire object intrusion, and the central strands were unrealistically untangled.
+- S5: The last simulation scene of Jacob’s ladder.<br/>
+Movie:<br/>
+[![](https://img.youtube.com/vi/dWUvdBkmsBw/0.jpg)](https://www.youtube.com/watch?v=dWUvdBkmsBw)<br/>
+This simulation required 10 minutes to disappear the slack of strands, after which we exceptionally continued the simulation for another 10 minutes.
 The simulation successfully converged without wire object intrusion occurred.
 
 ## Experiments of string figure simulation
@@ -173,7 +178,9 @@ re FN;
 - `OA` represents one of the first patterns of the string figure
 - `OA` determines the initial strand path to be load first. 
 
-Simulation: [movie](https://youtu.be/fRHMACJ9AdI)
+Movie:
+
+[![](https://img.youtube.com/vi/fRHMACJ9AdI/0.jpg)](https://www.youtube.com/watch?v=fRHMACJ9AdI)
 - includes four simulation scenes
 - converted to play at 10x speed
 - The simulation has been successfully finished.
@@ -192,7 +199,9 @@ re FN;
 - In the second line, two codes that are independent of each other are inputed together to execute the path alteration.
 - Thus, the number of simulation scenes is 5.
 
-Simulation: [movie](https://youtu.be/u20373SNhfs)
+Movie:
+
+[![](https://img.youtube.com/vi/u20373SNhfs/0.jpg)](https://www.youtube.com/watch?v=u20373SNhfs)
 - includes five simulation scenes
 - converted to play at 10x speed
 - The simulation has been successfully finished.
@@ -214,7 +223,9 @@ re bTN; re bMN;
 - `japan` is another the first pattern of the string figure
 - The last three codes are different from the original string manipulation; the last step of string manipulations for "twin stars" is *Osage Extension*, which cannot be represented by a finger movement code. The last three codes are alternative codes that  possibly acheive the same results as the osage extension.
 
-Simulation: [movie](https://youtu.be/sbImtVqkIX8)
+Movie:
+
+[![](https://img.youtube.com/vi/sbImtVqkIX8/0.jpg)](https://www.youtube.com/watch?v=sbImtVqkIX8)
 - includes 8 simulation scenes
 - converted to play at 10x speed
 - The simulation has been successfully finished.
@@ -238,10 +249,11 @@ re bMN; re LN;
 ```
 - The last three codes are alternative codes of osage extension.
 
+Movie:
+
 [![](https://img.youtube.com/vi/DFebMQz08EA/0.jpg)](https://www.youtube.com/watch?v=DFebMQz08EA)
 
-Simulation: [movie](https://youtu.be/DFebMQz08EA)
-includes 10 simulation scenes
+- includes 10 simulation scenes
 - converted to plate at 10x speed
 - the simulation has been successsfully finished.
 

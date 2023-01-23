@@ -28,4 +28,28 @@ After executing the script, enter the finger movement code. Note that if the fin
 
 The `packed path filename` as the output of the script is an input of the following wire simulation.
 
+# Try it
+
+Check the path output by wire simulation.
+Following script draws the path on a brower.
+```
+$ python simple_viewer.py ../experimental_result/output/4dia/4dia3.txt
+```
+
+Path alteration.
+Pick up the far middle finger string by thumb.
+Input path is the same as the privous script.
+Output path is saved as "a.txt".
+```
+$ python modifyPath.py ../experimental_result/output/4dia/4dia3.txt a.txt
+T mo nMS pu fMS;
+^D
+$
+```
+
+Check the altered path.
+```
+$ python simple_viewer.py a.txt
+```
+
 

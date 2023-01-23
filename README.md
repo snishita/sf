@@ -123,6 +123,10 @@ The actual path alteration is implemented by inserting new points and moving/del
 ![The path after the alteration](imgs/paths2.png)
 Fig.9: The path after the alteration. The right figure shows the path taken by the camera at the different position and angle.
 
+## Demonstration of string figure simulation
+
+[![](https://img.youtube.com/vi/6lpbcuTYHeU/0.jpg)](https://www.youtube.com/watch?v=6lpbcuTYHeU)
+
 ## Experiments of wire simulation
 Following experiments are conducted to investigate whether existing physical simulators can simulate the strands in the string figure.
 

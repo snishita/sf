@@ -1,0 +1,5 @@
+OA
+T pu LN;
+F pu fTS;
+up bTN;
+re bFN; re bTN;

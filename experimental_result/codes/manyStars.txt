@@ -1,0 +1,12 @@
+OA
+T mo nFS mo fFS pu nLS;
+M mo fFS mo nFS mo tfTS pu bfTS;
+re TN; re TN;
+T mo nFS mu fFS mu nMS mu fMS mu nLS pu fLS;
+re LN;
+T pu MN;（Nooseは他のすべての紐の上を通って取るため mo, mu を書かない）
+F mo tfTS pu tnTS;
+re tTN;
+T pu tnFS
+up bTN;
+re bFN; re bTN;

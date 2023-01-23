@@ -1,0 +1,10 @@
+japan
+re TN;
+T mu nMS mu fMS mu nLS pu fLS;
+T mo nMS pu fMS; re LN;
+L mu fMS mo nMS pu bfTS;
+re TN; re TN;
+T mo nMS mo fMS pu nLS;
+T pu nMS;
+M pu bTN;
+re bMN; re LN;

@@ -280,7 +280,7 @@ Movie:
 - includes 5 simulation scenes
 - the simulation has been successfully finished.
 
-# Many stars
+### Many stars
 
 Original string figure: [many stars](http://www.alysion.org/figures/kindofeasy.htm#many)
 
